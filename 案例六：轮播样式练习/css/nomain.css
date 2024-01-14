@@ -1,0 +1,71 @@
+body {
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    padding: 50px;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.slide {
+    width: max-content;
+    margin-top: 50px;
+}
+
+/* 图片槽的基本设置 */
+.item {
+    /* 条状->块状 */
+    font-size: 12px;
+    width: 200px;
+    height: 300px;
+    background-position: 50%, 50%;
+    display: inline-block;
+    background-size: cover;
+    /* 让每一个item重叠起来 */
+    position: absolute;
+    /* 美化样式 */
+    /* 上一次尝试少了这一步“top:50px” */
+    /* 以后要记住：“transform: translateY(-50%);”要和“top:50%”一起用 */
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+
+/* 背景大图设置：挑两个图片槽出来，更改样式 */
+.item:nth-child(1),
+.item:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+/* 更改图片槽的位置 */
+.item:nth-child(3) {
+    left: 50%
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.item:nth-child(6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
