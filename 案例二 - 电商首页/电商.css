@@ -1,0 +1,260 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* background: rgba(0, 0, 0, .1); */
+    transition: background 200ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: #f0f0f0;
+    color: #444;
+    line-height: 1.55;
+}
+
+.top {
+    display: block;
+    color: aqua;
+    background: #eee;
+}
+
+/* .top导航栏下的所有a链接标签 */
+.top .item {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #666;
+}
+
+.header {
+    padding: 20px;
+    background: #fcfcfc;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* 本案例的重点难点——使用float默认会清除高度，导致所有display和color、background呈现不出来，所以在前后添加空对象保持高度： */
+.clearf::after,
+.clearf::before {
+    /* 相当于空对象 */
+    content: "";
+    /* 占整行 */
+    display: block;
+    /* 让最前最后清除浮动，恢复高度 */
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .search-bar {
+    border: 2px solid red;
+}
+
+.header .search-bar input,
+.header .search-bar button {
+    border: 0px;
+    /* float: left; */
+    /* display: block; */
+    padding: 10px;
+}
+
+.header .search-bar input {
+    float: left;
+    width: 80%;
+    outline: 0px;
+}
+
+.header .search-bar input:focus {
+    -webkit-box-shadow: inset 0 0 2px 2px blue;
+    box-shadow: inset 0 0 2px 2px blue
+}
+
+.header .search-bar button:focus {
+    background: darkred;
+}
+
+.header .search-bar button {
+    float: right;
+    width: 20%;
+    background: red;
+}
+
+.header .cart {
+
+    text-align: center;
+}
+
+.header .cart a {
+    border: 1px solid grey;
+    padding: 10px;
+    background: #eee;
+    float: right;
+    width: 80%;
+    text-align: center;
+    color: #444;
+}
+
+.main-promote .container {
+    background: #bebdbd;
+}
+
+.main-promote .container .cat {
+    background: grey;
+    color: #fff;
+}
+
+.main-promote .container .cat .item {
+    padding: 16px 20px;
+    /* text-align: center; */
+}
+
+.main-promote .container .cat .item:hover {
+    background: darkgrey;
+}
+
+.main-promote .info {
+    padding: 18px;
+    background: white;
+    color: #666;
+    /* 质感 - 阴影 */
+    -webkit-box-shadow: 0 1px 2px lightgrey rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px lightgrey rgba(0, 0, 0, .1)
+}
+
+.main-promote .info .auth {
+    padding: 10px 5px;
+    /* line-height: 23px; */
+    /* background: white; */
+    /* border: 2px solid grey; */
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.main-promote .info .avat {
+    /* display: block; */
+    width: 50px;
+    height: 50px;
+    background: grey;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.main-promote .info .annount {
+    color: #949494;
+}
+
+/* .main-promote .info>* {
+    margin-bottom: 10px;
+} */
+
+*/ .colum-1 {
+    width: 10%;
+    /* display: block; */
+    float: left;
+}
+
+
+.cat-promote {}
+
+.cat-promote .title {
+    font-size: 23px;
+
+}
+
+/* 伪元素 */
+.cat-promote .title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 25px;
+    background: red;
+    margin-right: 10px;
+}
+
+.cat-promote .item {
+    padding: 3px;
+    /* background: red; */
+}
+
+.cat-promote .card {
+    height: 300px;
+    padding: 5px;
+    background: #bebdbd;
+    border-radius: 6px;
+}
+
+.footer {
+    margin-top: 310px;
+    padding: 30px 0;
+    background: #eee;
+    /* 文字垂直居中 */
+    text-align: center;
+    color: #000;
+}
+
+.grey {
+    color: #878787;
+}
+
+
+.colum-2 {
+    width: 20%;
+    float: left;
+    /* display: block; */
+}
+
+.colum-3 {
+    width: 30%;
+    float: left;
+    /* display: block; */
+}
+
+.colum-4 {
+    width: 40%;
+    /* display: block; */
+    float: left;
+}
+
+.colum-5 {
+    width: 50%;
+    float: left;
+    /* display: block; */
+}
+
+.colum-6 {
+    width: 60%;
+    float: left;
+    /* display: block; */
+}
+
+.colum-7 {
+    width: 80%;
+    float: left;
+    /* display: block; */
+}
