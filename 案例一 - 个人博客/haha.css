@@ -1,0 +1,95 @@
+body {
+    background: #353535;
+    line-height: 1.7;
+}
+
+.side-bar {
+    float: left;
+    width: 20%;
+    /* background: #333333; */
+    position: fixed
+}
+
+/* 侧栏下所有元素统一设置 */
+.side-bar>* {
+    padding: 10px 15px;
+}
+
+/* 侧栏中-导航栏 和 文章标题 */
+.side-bar .nav a,
+.side-bar .tag-list a {
+    display: block;
+    padding: 7px;
+    color: #949494;
+    transition: 200ms;
+}
+
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover {
+    color: #fff;
+}
+
+.side-bar .nav a {
+    font-weight: 700;
+}
+
+/* 链接文本 和 全局默认字体 */
+a,
+body {
+    color: #fff;
+}
+
+/* 链接文本 */
+a {
+    text-decoration: none;
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.header .logo {
+    /* line-height: 1; */
+    border: 5px solid white;
+    padding: 4px 12px;
+    font-size: 30px;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+
+.main {
+    float: right;
+    width: 80%;
+
+}
+
+/* 文章部分 */
+.article-list,
+.article {
+    margin-right: 30%;
+    background: white;
+    color: #555555;
+    padding: 20px 30px;
+    box-shadow: 0 0 5px;
+}
+
+.article-list .item,
+.article {
+    margin-bottom: 50px;
+}
+
+.article-list .item .title,
+.article .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #353535;
+}
+
+/* 文章状态 */
+.article-list .item .status,
+.article .status {
+    font-size: 20 px;
+    padding: 12px 0px;
+    color: #949494;
+}

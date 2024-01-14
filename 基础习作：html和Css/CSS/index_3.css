@@ -1,0 +1,30 @@
+[title] {
+    border: 2px solid red;
+}
+
+/* 属性内容 */
+[title="to baidu"] {
+    color: red;
+}
+
+/* 属性内容为“” */
+[title*="click"] {
+    font-weight: bolder;
+}
+
+/* 属性内容以“”包含 */
+[title^="click"] {
+    color: aliceblue;
+}
+
+/* 属性内容以“”为开始 */
+
+.button,
+input[type="submit"] {
+    border: 5px solid red;
+}
+
+.button,
+input[type="text"] {
+    border: 5px solid red;
+}

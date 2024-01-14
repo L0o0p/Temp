@@ -1,0 +1,28 @@
+<!-- DOM编程就是用JS操作HTML或CSS -->
+<!-- DOM（Document Object Model 文档对象模型） -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        button {
+            background: #b10;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <script>
+        var button = document.createElement('button');
+        button.innerText = 'Yo'
+        document.body.appendChild(button);
+        button.style.background = 'green'
+    </script>
+    <!-- <button>Yo</button> -->
+</body>
+
+</html>

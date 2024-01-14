@@ -1,0 +1,79 @@
+.sidebar {
+    color: #eee;
+    float: left;
+    width: 20%;
+    background: #999;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px;
+    color: #eee;
+}
+
+
+.sidebar .header {
+    line-height: 1;
+    /* border: 5px solid white; */
+    padding: 10px 20px;
+    /* font-size: 30px; */
+    /* display: inline; */
+    margin-bottom: 10px;
+}
+
+.sidebar .header .name {
+    line-height: 1;
+    border: 5px solid white;
+    padding: 5px;
+    font-size: 30px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.sidebar .quote {
+    line-height: 3;
+    /* border: 5px solid white; */
+    padding: 10px;
+    font-size: 20px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+
+.navg.sup {
+    color: #000;
+    font-weight: 900;
+}
+
+
+/* .navg a {
+    color: red;
+} */
+
+
+.navg a:hover {
+    color: red;
+    transition: color 200ms;
+}
+
+
+/* a {
+    text-decoration: none;
+} */
+
+
+.main {
+    float: right;
+    width: 70%;
+    background: white;
+    /* margin-right: 30%; */
+    padding: 20px 30px;
+
+}
+
+.main .content {
+    background: blue;
+    /* margin-right: 30%; */
+    padding: 20px 30px;
+
+}
