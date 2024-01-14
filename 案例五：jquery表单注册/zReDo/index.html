@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zReDo</title>
+  <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="wrap wrap-sm ">
+    <div class="input-wrap">
+      <div class="header">
+        <h1>登陆</h1>
+      </div>
+      <div class="form">
+        <form id="signup">
+          <div class="input-wrap">
+            <label>姓名</label>
+            <input data-rule='pattern:"^[a-z0-9]$"|max:10|min:2' id="test" type="text" name="name"
+              class="input-control">
+            <div id="name-input-error" class="input-error">姓名格式有误，...</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <button class="button-control" type="submit">注册</button>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="validator.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
